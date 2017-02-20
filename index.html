@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>iON</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="/javascripts/script.js"></script>
+</head>
+<body>
+
+<div class="jumbotron header-ion text-center">
+  <h1>iON</h1>
+  <p>A Smart Web-based Bot which talks via API</p> 
+</div>
+
+<div id="first-move-option" class="container" align="center">
+  <div class="well well-lg"><strong>Choose player for First Move:</strong>
+    <button type="button" class="btn btn-default" onclick="moveFirst('player')">Player</button>
+    <button type="button" class="btn btn-default" onclick="moveFirst('iON')">iON</button>
+    <button type="button" class="btn btn-default" onclick="moveFirst('coinToss')">TOSS</button>
+  </div>
+</div>
+
+<div id="iON-menus" class="row container" align="right">
+  <button type="button" class="btn btn-default" onclick="newGame()" >New Game</button>
+</div>
+
+<div id="game-board" class="row container">
+  <!-- AREANA -->
+  <div id="areana" class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6" align="center">
+    <div class="row">
+      <div id="box-8" class="play-box col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3" onclick="getClick(this.id)" >
+      </div>
+      <div id="box-1" class="play-box col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3" onclick="getClick(this.id)">
+      </div>
+      <div id="box-6" class="play-box col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3" onclick="getClick(this.id)">
+      </div>
+    </div>
+    <div class="row">
+      <div id="box-3" class="play-box col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3" onclick="getClick(this.id)">
+      </div>
+      <div id="box-5" class="play-box col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3" onclick="getClick(this.id)">
+      </div>
+      <div id="box-7" class="play-box col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3" onclick="getClick(this.id)">
+      </div>
+    </div>
+    <div class="row">
+      <div id="box-4" class="play-box col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3" onclick="getClick(this.id)">
+      </div>
+      <div id="box-9" class="play-box col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3" onclick="getClick(this.id)">
+      </div>
+      <div id="box-2" class="play-box col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3" onclick="getClick(this.id)">
+      </div>
+    </div>
+  </div>
+  <!-- End of AREANA-->
+
+  <!-- iON Analysis Board -->
+  <div id="ionAnalysis" class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6" align="center">
+    <h3>iON Moves:</h3>
+    <div id="iONMoves" class="row">
+    </div>
+  </div>
+  <div class="row">
+    <div id="winnerModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" onclick="closeModal()">&times;</button>
+            <h4 class="modal-title">Message:</h4>
+          </div>
+          <div class="modal-body">
+            <p id="winner_text"></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" onclick="newGame()" >New Game</button>
+            <button type="button" class="btn btn-default" onclick="closeModal()">Close</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- end of iON Analysis Board -->
+
+</div>
+
+
+
+
+</body>
+</html>

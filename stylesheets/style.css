@@ -1,0 +1,98 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.header-ion{
+  background-color: #33FF86;
+}
+
+button:hover{
+  background-color: #33FF86 !important;
+}
+
+#iON-menus{
+  display: none;
+  margin-bottom: 20px;
+}
+
+#game-board{
+  display: none;
+}
+
+#areana{
+  text-align: center;
+  padding: 20px;
+}
+
+#ionAnalysis{
+  background-color: #000;
+  color: #33FF86;
+  text-align: center;
+  height: 500px;
+  overflow-y: scroll;
+  padding: 20px;
+}
+
+#iONMoves{
+  text-align: left;
+  padding:20px;
+}
+
+.play-box{
+  width: 100px;
+  height: 100px;
+  line-height: 125px;
+  text-align: center;
+}
+
+#box-8{
+  border-top: 2px solid #000;
+  border-right: 2px solid #000;
+  border-left: 2px solid #000;
+  border-bottom: 2px solid #000;
+}
+#box-1{
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+}
+#box-6{
+  border-top: 2px solid #000;
+  border-right: 2px solid #000;
+  border-left: 2px solid #000;
+  border-bottom: 2px solid #000;
+}
+#box-3{
+  border-left: 2px solid #000;
+  border-right: 2px solid #000;
+  border-bottom: 2px solid #000;
+}
+#box-5{
+  border-bottom: 2px solid #000;
+}
+#box-7{
+  border-right: 2px solid #000;
+  border-left: 2px solid #000;
+  border-bottom: 2px solid #000;
+}
+#box-4{
+  border-left: 2px solid #000;
+  border-right: 2px solid #000;
+  border-bottom: 2px solid #000;
+}
+#box-9{
+  border-bottom: 2px solid #000;
+}
+#box-2{
+  border-right: 2px solid #000;
+  border-left: 2px solid #000;
+  border-bottom: 2px solid #000;
+}
+
+.glyphicon-remove,.glyphicon-record{
+  font-size: 50px;
+}
